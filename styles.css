@@ -1,0 +1,121 @@
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e9ecef; /* Latar belakang yang lebih cerah */
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px; /* Membuat sudut lebih melengkung */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Bayangan lebih halus */
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 2.5em; /* Ukuran font lebih besar */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 15px; /* Padding lebih besar untuk sel */
+    border: 1px solid #dee2e6; /* Warna border lebih lembut */
+    text-align: left;
+    font-size: 1.1em; /* Ukuran font lebih besar untuk konten tabel */
+}
+
+th {
+    background-color: #007BFF; /* Warna header tabel */
+    color: white;
+    text-transform: uppercase; /* Menjadikan teks header huruf kapital */
+}
+
+tr:nth-child(even) {
+    background-color: #f2f9ff; /* Warna latar belakang lebih lembut untuk baris genap */
+}
+
+tr:hover {
+    background-color: #d1ecf1; /* Warna saat hover lebih mencolok */
+}
+
+button {
+    margin: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745; /* Warna tombol utama */
+    color: white;
+    font-weight: bold; /* Font tebal untuk tombol */
+    transition: background-color 0.3s, transform 0.2s; /* Efek transisi saat hover */
+}
+
+button:hover {
+    background-color: #218838; /* Warna saat hover tombol */
+    transform: scale(1.05); /* Efek pembesaran saat hover */
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed; 
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.7); /* Warna latar belakang modal lebih gelap */
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+    border-radius: 10px; /* Sudut melengkung untuk modal */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #ff0000; /* Warna merah saat hover */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#albumsList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#albumsList li {
+    padding: 10px;
+    background: #e9ecef;
+    margin: 5px 0;
+    border-radius: 5px;
+    transition: background-color 0.3s; /* Efek transisi saat hover */
+}
+
+#albumsList li:hover {
+    background: #d1ecf1; /* Warna saat hover pada daftar album */
+}
